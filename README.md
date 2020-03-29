@@ -3,6 +3,22 @@ This is an implementation of [EfficientDet](https://arxiv.org/pdf/1911.09070.pdf
 The project is based on the official implementation [google/automl](https://github.com/google/automl), [fizyr/keras-retinanet](https://github.com/fizyr/keras-retinanet)
 and the [qubvel/efficientnet](https://github.com/qubvel/efficientnet). 
 
+## Setup
+If receiving an error "ModuleNotFoundError: No module named 'utils.compute_overlap'", perform below to install:
+
+\EfficientDet>python setup.py build_ext --inplace
+running build_ext
+building 'utils.compute_overlap' extension
+creating build
+creating build\temp.win-amd64-3.7
+creating build\temp.win-amd64-3.7\Release
+creating build\temp.win-amd64-3.7\Release\utils
+utils/compute_overlap.obj
+compute_overlap.c
+...
+Generating code
+Finished generating code
+
 ## About pretrained weights
 * The pretrained EfficientNet weights on imagenet are downloaded from [Callidior/keras-applications/releases](https://github.com/Callidior/keras-applications/releases)
 * The pretrained EfficientDet weights on coco are converted from the official release [google/automl](https://github.com/google/automl).
