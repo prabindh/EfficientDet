@@ -4,20 +4,12 @@ The project is based on the official implementation [google/automl](https://gith
 and the [qubvel/efficientnet](https://github.com/qubvel/efficientnet). 
 
 ## Setup
-If receiving an error "ModuleNotFoundError: No module named 'utils.compute_overlap'", perform below to install:
 
-\EfficientDet>python setup.py build_ext --inplace
-running build_ext
-building 'utils.compute_overlap' extension
-creating build
-creating build\temp.win-amd64-3.7
-creating build\temp.win-amd64-3.7\Release
-creating build\temp.win-amd64-3.7\Release\utils
-utils/compute_overlap.obj
-compute_overlap.c
-...
-Generating code
-Finished generating code
+Create Conda environment with py 3.7 - 
+`conda create env -n efficientdet python=3.7`
+`pip install numpy`
+`python setup.py build_ext --inplace`
+`pip install -r requirements.txt`
 
 ## About pretrained weights
 * The pretrained EfficientNet weights on imagenet are downloaded from [Callidior/keras-applications/releases](https://github.com/Callidior/keras-applications/releases)
